@@ -273,7 +273,7 @@ header {
       #bislite-flex-responsive {
           grid-area: 2/1/span 1 / span  3;
         background-position: top;
-        background-image: url("/LAB03/bislite.jpg");
+        background-image: url("LAB03/bislite.jpg");
       }
       }
     }
@@ -343,7 +343,7 @@ header {
         #bislite-flex-responsive {
             grid-area: 1/6/span 1 / span  5;
           background-position: top;
-          background-image: url("/LAB03/bislite.jpg");
+          background-image: url("LAB03/bislite.jpg");
         }
       }
 
