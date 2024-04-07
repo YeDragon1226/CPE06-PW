@@ -1,0 +1,294 @@
+/*
+  .oooooo.    ooooo          .oooooo.   oooooooooo.        .o.       ooooo        
+ d8P'  `Y8b   `888'         d8P'  `Y8b  `888'   `Y8b      .888.      `888'        
+888            888         888      888  888     888     .8"888.      888         
+888            888         888      888  888oooo888'    .8' `888.     888         
+888     ooooo  888         888      888  888    `88b   .88ooo8888.    888         
+`88.    .88'   888       o `88b    d88'  888    .88P  .8'     `888.   888       o 
+ `Y8bood8P'   o888ooooood8  `Y8bood8P'  o888bood8P'  o88o     o8888o o888ooooood8                                                                          
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  background-color: #ededed;
+}
+
+ul {
+  list-style: none;
+}
+
+/* 
+  .oooooo.    ooooooooo.     .oooooo.   ooooo     ooo ooooooooo.   
+ d8P'  `Y8b   `888   `Y88.  d8P'  `Y8b  `888'     `8' `888   `Y88. 
+888            888   .d88' 888      888  888       8   888   .d88' 
+888            888ooo88P'  888      888  888       8   888ooo88P'  
+888     ooooo  888`88b.    888      888  888       8   888         
+`88.    .88'   888  `88b.  `88b    d88'  `88.    .8'   888         
+ `Y8bood8P'   o888o  o888o  `Y8bood8P'     `YbodP'    o888o        
+*/
+
+.header-inner-container > *,
+.header-logo > *,
+.panel-box > *,
+.footer-icons > * {
+  float: left;
+}
+
+#header-container,
+#panel-container,
+#footer {
+	margin-top: 3%;
+}
+
+/* 
+ooooo   ooooo oooooooooooo       .o.       oooooooooo.   oooooooooooo ooooooooo.   
+`888'   `888' `888'     `8      .888.      `888'   `Y8b  `888'     `8 `888   `Y88. 
+ 888     888   888             .8"888.      888      888  888          888   .d88' 
+ 888ooooo888   888oooo8       .8' `888.     888      888  888oooo8     888ooo88P'  
+ 888     888   888    "      .88ooo8888.    888      888  888    "     888`88b.    
+ 888     888   888       o  .8'     `888.   888     d88'  888       o  888  `88b.  
+o888o   o888o o888ooooood8 o88o     o8888o o888bood8P'   o888ooooood8 o888o  o888o 
+*/
+
+#header-container {
+  background-color: #474747;
+  width: 100%;
+  aspect-ratio: 1/0.075;
+}
+
+.header-inner-container {
+  margin: 0 auto;
+  width: 60%;
+  height: 100%;
+}
+
+.header-tagline {
+  margin: auto auto;
+  width: 60%;
+  height: 100%;
+  padding: 4% 0;
+  color: #8d8d8d;
+}
+
+.header-logo {
+
+	padding: 3.5% 1.1%;
+  width: 40%;
+  background-color: #2f549b;
+  height: 115%;
+  margin-top: -1%;
+}
+
+.header-logo * {
+  margin-right: 5%;
+}
+
+.header-logo :last-child {
+  margin-right: 0;
+}
+
+.header-logo h1 {
+  padding: 0% 0;
+  height: 100%;
+  font-size: 4rem;
+  color: white;
+}
+
+.header-logo p {
+  padding: 2% 0;
+  color: #6e6e6e;
+  height: 100%;
+  font-size: 1.5rem;
+}
+
+/* 
+oooooooooo.    .oooooo.   oooooooooo.   oooooo   oooo 
+`888'   `Y8b  d8P'  `Y8b  `888'   `Y8b   `888.   .8'  
+ 888     888 888      888  888      888   `888. .8'   
+ 888oooo888' 888      888  888      888    `888.8'    
+ 888    `88b 888      888  888      888     `888'     
+ 888    .88P `88b    d88'  888     d88'      888      
+o888bood8P'   `Y8bood8P'  o888bood8P'       o888o     
+*/
+
+#body-wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#panel-container {
+  width: 100%;
+  aspect-ratio: 1/0.35;
+}
+.panel-box {
+  font-size: 1.4em;
+  color: #2d5499;
+}
+
+.panel-box li * {
+  margin: 8% 0;
+  text-align: center;
+}
+
+.panel-box > :last-child {
+  margin-right: 0;
+}
+
+.panel-box li {
+  width: 20%;
+  margin-right: 6.65%;
+  padding: 2%;
+  background-color: white;
+}
+
+.panel-box li :nth-child(3) {
+  color: #9aadcd;
+}
+
+.panel-box p {
+  font-size: 0.45em;
+}
+
+.panel-box hr {
+  width: 50%;
+  margin: auto;
+  background-color: gray;
+  border: none;
+  height: 1px;
+}
+
+.panel-box a {
+  display: block;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  color: gray;
+  font-size: 0.75rem;
+  opacity: 0.5;
+}
+
+.panel-box img {
+  display: block;
+  margin: auto;
+}
+
+.panel-box li:hover {
+  background-color: #2f549b;
+  color: white;
+}
+.panel-box li:hover :nth-child(5) {
+  opacity: 0.5;
+}
+
+.panel-box li:hover a {
+  color: white;
+  opacity: 1;
+}
+
+.panel-box li:hover hr {
+  opacity: 0.5;
+}
+
+/* 
+oooooooooooo   .oooooo.     .oooooo.   ooooooooooooo oooooooooooo ooooooooo.   
+`888'     `8  d8P'  `Y8b   d8P'  `Y8b  8'   888   `8 `888'     `8 `888   `Y88. 
+ 888         888      888 888      888      888       888          888   .d88' 
+ 888oooo8    888      888 888      888      888       888oooo8     888ooo88P'  
+ 888    "    888      888 888      888      888       888    "     888`88b.    
+ 888         `88b    d88' `88b    d88'      888       888       o  888  `88b.  
+o888o         `Y8bood8P'   `Y8bood8P'      o888o     o888ooooood8 o888o  o888o                                                                   
+*/
+
+#footer-container {
+  margin-top: 5%;
+  width: 100%;
+  aspect-ratio: 1/0.2;
+  position: relative;
+}
+
+#footer-title-container {
+  width: 30%;
+  aspect-ratio: 1/0.2;
+  background-color: #1e355f;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  clip-path: polygon(
+    0% 50%,
+    10% 100%,
+    90% 100%,
+    100% 50%,
+    90% 50%,
+    90% 0%,
+    10% 0%,
+    10% 50%
+  );
+  box-shadow: inset 0 19px 1px 0 black;
+}
+
+.footer-title {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #2f549b;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  padding: 4% 0;
+  color: white;
+  font-size:1.5em;
+}
+
+.footer-icons {
+  height: 100%;
+  background-color: #c6c6c6;
+  width: 100%;
+  padding: 3%;
+  padding-top: 4%;
+  box-shadow: inset 0 1px 1px 0 black;
+}
+
+.footer-icons :last-child {
+  margin: 0;
+}
+
+.footer-icons > li {
+  padding: 1% 1%;
+  margin-right: 1.5%;
+  height: 90%;
+  width: 15%;
+  border-radius: 5px;
+  color: #686868;
+}
+
+.footer-icons img {
+  display: block;
+  margin: auto;
+}
+
+.footer-icons h5 {
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.footer-icons > li:hover {
+  background-color: #2f549b;
+  color: white;
+}
