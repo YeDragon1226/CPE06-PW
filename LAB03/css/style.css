@@ -73,8 +73,6 @@ footer {
   gap: 10px;
 }
 
-
-
 .header-outer-box {
   align-items: center;
   justify-content: space-between;
@@ -92,7 +90,7 @@ footer {
 header,
 #services-section,
 main {
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .header-outer-box > * {
@@ -121,7 +119,7 @@ main {
 
 .header-box label:hover h3,
 .header-box > li > a:hover,
-.header-box > li > a:active{
+.header-box > li > a:active {
   color: #2aacc8;
 }
 
@@ -152,12 +150,13 @@ li:has(#check-2:checked) {
   display: block;
 }
 
-label:has( + #check-1:checked),
-label:has( + #check-2:checked) {
-	color: #2aacc8;
+label:has(+ #check-1:checked),
+label:has(+ #check-2:checked) {
+  color: #2aacc8;
 }
 
 .services-menu {
+  z-index: 10;
   font-size: 15px;
   display: none;
   position: absolute;
@@ -178,7 +177,7 @@ label:has( + #check-2:checked) {
 }
 
 .services-menu h4:hover {
-	color: #2aacc8;
+  color: #2aacc8;
 }
 
 #hero-section {
@@ -231,7 +230,6 @@ label:has( + #check-2:checked) {
 .service-title img {
   border-radius: 100dvw;
 }
-
 
 .services-box p {
   font-size: 15px;
@@ -306,7 +304,7 @@ label:has( + #check-2:checked) {
 }
 
 .company-box {
-  justify-content: center;
+  justify-content: cePORTFOLIOnter;
   flex-wrap: wrap;
 }
 
@@ -409,6 +407,39 @@ label:has( + #check-2:checked) {
   .header-box {
     gap: 10px;
     flex-direction: column;
+  }
+
+  li:has(#check-1:checked),
+  li:has(#check-2:checked) {
+    padding-block: 5px;
+    border-block: none;
+    background-color: transparent;
+  }
+
+  #check-1:checked + .services-menu,
+  #check-2:checked + .services-menu {
+    display: block;
+  }
+
+  label:has(+ #check-1:checked),
+  label:has(+ #check-2:checked) {
+    color: #2aacc8;
+  }
+
+  li:has(#check-1:checked) + li {
+    margin-top: 300px;
+  }
+
+  li:has(#check-2:checked) + li {
+    margin-top: 200px;
+  }
+
+  .services-menu {
+    border-bottom: none;
+    border-radius: 10px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   #hero-section img {
