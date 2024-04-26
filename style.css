@@ -280,6 +280,12 @@ header {
           background-position: top;
           background-image: url("LAB04/Form Applications/form-application.png");
         }
+
+        #carousel {
+          grid-area: 1/ 1 / span 1 / span 3;
+          background-position: top;
+          background-image: url("LAB05/carousel.png");
+        }
       }
     }
 
@@ -356,6 +362,12 @@ header {
           background-position: top;
           background-image: url("LAB04/Form Applications/form-application.png");
           background-size: 100% 100%;
+        }
+
+        #carousel {
+          grid-area: 1/ 1 / span 1 / span 10;
+          background-position: top;
+          background-image: url("LAB05/carousel.png");
         }
       }
 
