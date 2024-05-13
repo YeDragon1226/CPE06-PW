@@ -282,9 +282,15 @@ header {
         }
 
         #carousel {
-          grid-area: 1/ 1 / span 1 / span 3;
+          grid-area: 1/ 1/ span 1 / span 3;
           background-position: top;
           background-image: url("LAB05/carousel.png");
+        }
+
+        #jetro {
+          grid-area: 2/ 2/ span 1 / span 3;
+          background-position: top;
+          background-image: url("LAB07/jetro.jpg");
         }
       }
     }
@@ -355,6 +361,7 @@ header {
           grid-area: 1/4 / span 1 / span 4;
           background-position: top;
           background-image: url("LAB03/bislite.jpg");
+          background-size: 100% 100%;
         }
 
         #form-application {
@@ -365,9 +372,16 @@ header {
         }
 
         #carousel {
-          grid-area: 1/ 1 / span 1 / span 10;
+          grid-area: 1/ 1/ span 1 / span 5;
           background-position: top;
           background-image: url("LAB05/carousel.png");
+          background-size: 100% 100%;
+        }
+
+        #jetro {
+          grid-area: 1/ 6/ span 1 / span 5;
+          background-position: top;
+          background-image: url("LAB07/jetro.jpg");
         }
       }
 
@@ -439,6 +453,24 @@ header {
         }
         #form-application {
           grid-area: 1/5/1 / span 6;
+        }
+      }
+
+      .files-box:has(#carousel:hover) {
+        #carousel {
+          grid-area: 1/1/1 / span 7;
+        }
+        #jetro {
+          grid-area: 1/8/1 / span 3;
+        }
+      }
+
+      .files-box:has(#jetro:hover) {
+        #carousel {
+          grid-area: 1/1/1 / span 3;
+        }
+        #jetro {
+          grid-area: 1/4/1 / span 7;
         }
       }
     }
